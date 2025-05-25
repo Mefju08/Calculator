@@ -1,9 +1,10 @@
 pipeline {
-    agent {
-        dockerContainer {
-            image "mcr.microsoft.com/dotnet/sdk:9.0"
-        }
+    agent any
+
+    tools{
+        dotnetsdk "dotnet"
     }
+       
    
     environment {
         CONFIGURATION = "Release"
