@@ -6,6 +6,12 @@ pipeline {
     }
 
     stages {
+        stage("Debug PATH") {
+            steps {
+                sh "echo PATH=$PATH"
+                sh "which dotnet || echo 'dotnet not found'"
+            }
+        }
         stage("CleanUp") {
             steps {
                 sh "dotnet clean"
