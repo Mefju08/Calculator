@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'mcr.microsoft.com/dotnet/sdk:9.0-preview'
-            args '-u root'  // jeżeli potrzebne do uprawnień
-        }
-    }
+    
 
     environment {
         CONFIGURATION = "Release"
