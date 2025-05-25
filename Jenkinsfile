@@ -7,6 +7,7 @@ pipeline {
        
    
     environment {
+        DOTNET_SYSTEM_GLOBALIZATION_INVARIANT = "true"
         CONFIGURATION = "Release"
     }
 
