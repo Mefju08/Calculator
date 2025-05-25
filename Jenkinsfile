@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+       dotnet "DotNet"  
+    }
+     
     environment {
         CONFIGURATION = "Release"
     }
