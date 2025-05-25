@@ -19,13 +19,13 @@ pipeline {
         }
         stage("CleanUp") {
             steps {
-                sh "dotnet clean"
+                dotnetClean()
             }
         }
 
         stage("Restore") {
             steps {
-                sh "dotnet restore"
+                dotnetRestore()
             }
         }
 
