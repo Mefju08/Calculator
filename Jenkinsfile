@@ -1,7 +1,7 @@
 pipeline {
     agent {
-        dockerContainer('mcr.microsoft.com/dotnet/sdk:9.0') {
-            
+        dockerContainer {
+            image "mcr.microsoft.com/dotnet/sdk:9.0"
         }
     }
    
