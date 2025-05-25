@@ -1,5 +1,5 @@
 pipeline {
-    
+    agent any
 
     environment {
         CONFIGURATION = "Release"
