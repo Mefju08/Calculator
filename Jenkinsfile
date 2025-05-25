@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-       dotnet "DotNet"  
+       dotnetsdk "DotNet"  
     }
      
     environment {
