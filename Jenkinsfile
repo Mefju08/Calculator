@@ -1,10 +1,10 @@
 pipeline {
-    agent any
-
-    tools {
-       msbuild "msbuild"  
+    agent {
+        docker {
+            image 'mcr.microsoft.com/dotnet/sdk:9.0'            
+        }
     }
-     
+   
     environment {
         CONFIGURATION = "Release"
     }
